@@ -1,0 +1,69 @@
+html{
+    /* Delaring the font variables */
+    --blog-font-family: 'Open Sans', sans-serif;
+    --header-font-family:'Alkalami', serif;
+    --font-family:'Oswald', sans-serif;
+
+     /* Delaring the text color variables */
+     --text-color: rgb(24, 24, 24);
+     --header-text-color:rgb(238, 164, 80);
+     --header-text-color-hover:rgb(233, 134, 22);
+
+     /* Declaring the font-size */
+     --header-font-size: 1.3rem;
+
+     /* Declaring dimensions */
+     --header-height: 5rem;
+
+    /* Delaring the color variables */
+    --linear-background-color: linear-gradient(58deg, rgb(62, 62, 62), rgb(24, 24, 24));
+    --background-color-light: rgb(238, 164, 80);
+    --background-color-dark: rgb(233, 134, 22);
+    --header-background-color: rgba(14, 14, 14);
+}
+
+body{
+    background: var(--linear-background-color);
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+header{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: var(--header-background-color)border-box;
+    font-family: var(--header-font-family);
+    font-size: var(--header-font-size);
+    background-color: var(--header-background-color);
+    height: var(--header-height);
+    padding: 15px 68px;
+}
+
+.nav-menu{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li{
+    margin: 0 0.6rem;
+    
+}
+
+ul{
+    list-style-type: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: var(--header-text-color);
+}
+
+a:hover{
+    color: var(--header-text-color-hover);
+}
