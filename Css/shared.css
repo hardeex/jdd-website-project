@@ -16,7 +16,7 @@ html{
      --header-height: 5rem;
 
     /* Delaring the color variables */
-    --linear-background-color: linear-gradient(58deg, rgb(62, 62, 62), rgb(24, 24, 24));
+    --linear-background-color: linear-gradient(248deg, rgb(22, 22, 22), rgb(44, 44, 44));
     --background-color-light: rgb(238, 164, 80);
     --background-color-dark: rgb(233, 134, 22);
     --header-background-color: rgba(14, 14, 14);
