@@ -13,13 +13,14 @@ html{
      --header-font-size: 1.3rem;
 
      /* Declaring dimensions */
-     --header-height: 5rem;
+     --header-height: 2.3rem;
 
     /* Delaring the color variables */
-    --linear-background-color: linear-gradient(248deg, rgb(22, 22, 22), rgb(44, 44, 44));
+    --linear-background-color: linear-gradient(248deg, rgb(222, 222, 222), rgb(234, 234, 234));
     --background-color-light: rgb(238, 164, 80);
     --background-color-dark: rgb(233, 134, 22);
-    --header-background-color: rgba(14, 14, 14);
+    --header-background-color: rgba(24, 24, 24);
+    --hero-image-content-background: rgba(14, 14, 14, 0.8)
 }
 
 body{
@@ -66,4 +67,55 @@ a{
 
 a:hover{
     color: var(--header-text-color-hover);
+}
+
+#hero-image-container{
+    background-image: url(../Image/hero_image.jpg);
+    height: 768px;
+    background-position: center;
+    background-size:cover;
+    object-fit: cover;
+}
+
+#hero-content{
+    background-color: var(--hero-image-content-background);
+    width: 500px;
+    padding: 50px 0;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    top: 250px;
+   
+}
+
+#hero-content h1 {
+    color: rgba(230, 230, 230);
+    margin:  0;
+    margin-bottom: 2rem;
+    line-height: 2.3rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form input{
+    height: 30px;
+    border-radius: 5px;
+}
+
+form input:focus{
+    font-size: 1.5rem;
+}
+
+form button{
+    margin-left: 1.2rem;
+    border-radius: 5px;
+    background-color: var(--background-color-light);
+    color: rgba(230, 230, 230);
+    padding: 0.5rem 0.9rem;
+}
+
+form button:hover{
+    background-color: var(--background-color-dark);
+    color: rgba(230, 230, 230);
 }

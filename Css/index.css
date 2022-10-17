@@ -1,0 +1,28 @@
+.program{
+    background-color: rgb(236, 237, 241)
+}
+
+/* .program-list{
+    margin-top: 1.5rem;
+} */
+
+li{
+    margin-top: 1.5rem;
+}
+
+ul a{
+    background-color: var(--background-color-light);
+    color: rgb(250, 250, 250);
+    padding: 0.5rem 1.2rem;
+    
+    border-radius: 8px;
+}
+
+.program-list-black a{
+    background-color: black;
+}
+
+.program-list-white a{
+    background-color: rgb(250, 250, 250);
+}
+
