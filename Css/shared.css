@@ -6,20 +6,26 @@ html{
 
      /* Delaring the text color variables */
      --text-color: rgb(24, 24, 24);
-     --header-text-color:rgb(238, 164, 80);
-     --header-text-color-hover:rgb(233, 134, 22);
+     /* --header-text-color:rgb(238, 164, 80);
+     --header-text-color-hover:rgb(233, 134, 22); */
+     --header-text-color:rgb(53, 53, 53);
+     --header-text-color-hover:rgb(14, 14, 14);
 
      /* Declaring the font-size */
      --header-font-size: 1.3rem;
 
      /* Declaring dimensions */
-     --header-height: 2.3rem;
+     --header-height: 3.5rem;
 
     /* Delaring the color variables */
     --linear-background-color: linear-gradient(248deg, rgb(222, 222, 222), rgb(234, 234, 234));
     --background-color-light: rgb(238, 164, 80);
     --background-color-dark: rgb(233, 134, 22);
-    --header-background-color: rgba(24, 24, 24);
+    /* --background-color-light: rgb(53, 53, 53);
+    --background-color-dark: rgb(10, 10, 10); */
+
+    /* --header-background-color: rgba(24, 24, 24); */
+    --header-background-color: rgba(230, 230, 230);
     --hero-image-content-background: rgba(14, 14, 14, 0.8)
 }
 
@@ -31,17 +37,37 @@ body{
     text-align: center;
 }
 
+/* start of index header and hero-content styling */
+
 header{
-    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: var(--header-background-color)border-box;
+    
+}
+
+header{
+    /* width: 100%; */
+    font-family: var(--header-font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+   
+   
+    
+    box-sizing: border-box;
+    position: sticky;
+    box-shadow: 0 0 8px -1px rgb(0 0 0 / 25%);
+    z-index: 999;
+    
     font-family: var(--header-font-family);
     font-size: var(--header-font-size);
     background-color: var(--header-background-color);
     height: var(--header-height);
-    padding: 15px 68px;
+    /* padding: 15px 68px; */
+    padding: 0 5%;
 }
 
 .nav-menu{
@@ -52,59 +78,61 @@ header{
 
 .nav-menu li{
     margin: 0 0.6rem;
-    
-}
-
-ul{
     list-style-type: none;
-    
 }
 
-a{
+
+
+header a{
     text-decoration: none;
     color: var(--header-text-color);
 }
 
-a:hover{
+header a:hover{
     color: var(--header-text-color-hover);
+    text-shadow: rgb(14, 14, 14);
+    text-transform: uppercase;
 }
 
+
+
 #hero-image-container{
-    background-image: url(../Image/hero_image.jpg);
-    height: 768px;
+    /* background-image: url(../Image/hero_image.jpg); */
+    background-color: rgb(32, 32, 32);
+    height: 500px;
     background-position: center;
+    overflow: hidden;
     background-size:cover;
     object-fit: cover;
 }
 
+
 #hero-content{
-    background-color: var(--hero-image-content-background);
-    width: 500px;
-    padding: 50px 0;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 10px;
-    position: relative;
-    top: 250px;
-   
+    font-size: 1.3rem;
+    color:rgb(234, 234, 234);
+    text-align: left;
+    padding-left: 3rem;
+    line-height: 2rem;
+    margin: 0 0 0.8rem;
+    text-transform: capitalize;
 }
 
-#hero-content h1 {
-    color: rgba(230, 230, 230);
-    margin:  0;
-    margin-bottom: 2rem;
-    line-height: 2.3rem;
-    padding-left: 10px;
-    padding-right: 10px;
+#hero-content h1{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 3rem;
+    font-family: var(--blog-font-family);
 }
 
 form input{
     height: 30px;
     border-radius: 5px;
+    margin-top: 1.5rem;
 }
 
 form input:focus{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 form button{
@@ -118,4 +146,7 @@ form button{
 form button:hover{
     background-color: var(--background-color-dark);
     color: rgba(230, 230, 230);
+    font-weight: bold;
 }
+
+/* End of index header and hero-content styling */

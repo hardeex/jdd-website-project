@@ -1,79 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
 
+    <!-- linking fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkalami&family=Open+Sans:wght@300&family=Oswald:wght@200&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- linking fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Open+Sans:wght@300&family=Oswald:wght@200&display=swap" rel="stylesheet">
-
-<!-- linking the css files     -->
-    <link rel="stylesheet" href="../Css/shared.css">
-    <link rel="stylesheet" href="../Css/index.css">
+    <!-- linking the css files     -->
+    <link rel="stylesheet" href="../Css/shared.css" />
+    <link rel="stylesheet" href="../Css/index.css" />
 
     <!-- linking the favicon from the root directory -->
-    <link rel="shortcut icon" href="../favicon/favicon_io/favicon.ico" type="image/x-icon">
-   
-   
-</head>
-<body>
-
+    <link
+      rel="shortcut icon"
+      href="../favicon/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <header>
-
+        <nav>
+            <div>
+                <ul class="nav-menu">
+                <li >
+                    <a href="../Html/index.html">Home</a>
+                </li>
+                <li >
+                    <a href="../Html/index.html">Blog</a>
+                </li>
+               
+                <li>
+                    <a href="../Html/index.html">Support</a>
+                </li>
+                <li>
+                    <a href="../Html/index.html">Telecom</a>
+                </li>
+                <li>
+                    <input type="search" name="search-result" id="search-result" placeholder="search">
+                </li>
+                
+            </ul>
+            </div>
+        </nav>
 
     </header>
-
     <main>
-        <section>
-            <div class="program">
-                <h2>W3School Website</h2>  
-                <p>Download W3School website on your local device and learn different programing languages
-                    at your own pace
-                </p>
+      <section id="hero-image-container">
+        <div id="hero-content">
+          <ul>
+            <h1>Learn, Build, Buy and Connect for free...</h1>
+            <li>Native Android App Development</li>
+            <li>Web Development</li>
+            <li>Software Development</li>
+            <li>
+              Programming Languages such as C, C++, Phython, SQL and much
+              more...
+            </li>
+            <li>
+              Buy Internet data bundles, airtime and cable Tv subscriptions
+            </li>
+            <li>Fund your betting wallet</li>
+            <li>Download educational materials</li>
 
-                <div>
-                    <ul>
-                        <li class="program-list">
-                            <a href="">Learn HTML, CSS, JavaScript</a>
-                        </li>
-                       
-                        <li class="program-list-black">
-                            <a href="">Learn SQL</a>
-                        </li>
-                       
-                        <li class="program-list-white">
-                            <a href="">Learn Phyton</a>
-                        </li>
-                       
-                        <li class="program-list">
-                            <a href="">Learn C</a>
-                        </li>
-                       
-                        <li class="program-list">
-                            <a href="">And much more ...</a>
-                        </li>
-                    </ul>
-                    <div class="download">
-                        <a href="http://" target="_blank" rel="noopener noreferrer">Free Download</a>
-                    </div>
-                </div>
-
-          </div>
-            </div>
-          <div>
-           <h2>
-        </section>
-
+            <form action="" method="post">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                required
+                placeholder="Email Address"
+              />
+              <a href="">
+                <button type="submit">Subscribe</button>
+              </a>
+            </form>
+          </ul>
+        </div>
+      </section>
     </main>
 
-    <footer>
-
-    </footer>
-    
-</body>
+    <footer></footer>
+  </body>
 </html>
