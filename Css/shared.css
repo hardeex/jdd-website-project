@@ -18,7 +18,7 @@ html{
      --header-height: 3.5rem;
 
     /* Delaring the color variables */
-    --linear-background-color: linear-gradient(248deg, rgb(222, 222, 222), rgb(234, 234, 234));
+    --linear-background-color: linear-gradient(248deg, rgb(252, 252, 252), rgb(234, 234, 234));
     --background-color-light: rgb(245, 177, 100);
     --background-color-dark: rgb(233, 134, 22);
     /* --background-color-light: rgb(53, 53, 53);
@@ -132,8 +132,10 @@ form input:focus{
 
 form button,
 .program-content a button,
-.download-link a{
+.download-link a,
+.blog-explore-btn button{
     margin-left: 1.2rem;
+    margin-bottom: 13px;
     border-radius: 5px;
     background-color: var(--background-color-light);
     color: white;
@@ -142,7 +144,9 @@ form button,
     border: 0;
 }
 
-form button:hover{
+form button:hover,
+.download-btn a button:hover,
+.blog-explore-btn a button:hover{
     background-color: var(--background-color-dark);
     color: rgba(230, 230, 230);
     font-weight: bold;

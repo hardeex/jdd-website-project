@@ -1,35 +1,48 @@
+html{
+    /* Delaring the font variables */
+    --blog-font-family: 'Open Sans', sans-serif;
+    --header-font-family:'Alkalami', serif;
+    --font-family:'Oswald', sans-serif;
 
-/** start of styling the coding/programming section **/
+     /* Delaring the text color variables */
+     --text-color: rgb(24, 24, 24);
+     /* --header-text-color:rgb(238, 164, 80);
+     --header-text-color-hover:rgb(233, 134, 22); */
+     --header-text-color:rgb(53, 53, 53);
+     --header-text-color-hover:rgb(14, 14, 14);
 
-/* #program{
-    
-    
+     /* Declaring the font-size */
+     --header-font-size: 1.3rem;
+
+     /* Declaring dimensions */
+     --header-height: 3.5rem;
+
+    /* Delaring the color variables */
+    --linear-background-color: linear-gradient(248deg, rgb(252, 252, 252), rgb(234, 234, 234));
+    --background-color-light: rgb(245, 177, 100);
+    --background-color-dark: rgb(233, 134, 22);
+    /* --background-color-light: rgb(53, 53, 53);
+    --background-color-dark: rgb(10, 10, 10); */
+
+    /* --header-background-color: rgba(24, 24, 24); */
+    --header-background-color: rgb(250, 250, 250);
+    --hero-image-content-background: rgba(14, 14, 14, 0.8)
 }
 
 
-main #program ul{
-    width: 1200px;
-    margin: 0 auto 50px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
 
-
+.program h2,
+.blog-container h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+    /* color: var(--text-color); */
 }
 
-#program ul li{
-    list-style-type: none;
-    display: flex;
-    background-color: white;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    overflow: hidden; 
-} */
-
-.program ul{
+.program ul,
+.blog-container ul{
     width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     padding: 0;
     gap: 2rem;
@@ -37,7 +50,8 @@ main #program ul{
 }
 
 
-.program-item{
+.program-item,
+.blog-post-container{
     width: 100%;
     background-color: white;
     border-radius: 10px;
@@ -51,8 +65,8 @@ main #program ul{
     border-radius: 50px;
     float: left;
     object-fit: cover;
-   padding: 16px;
-   overflow: hidden;
+    padding: 16px;
+    overflow: hidden;
     
 }
 
@@ -61,22 +75,16 @@ main #program ul{
     overflow: auto;
 }
 
-.program-content h2{
+.program-content h2,
+.blog-caption h3{
     font-size: 1rem;
     font-family: var(--blog-font-family);
+    color: var(--text-color);
 }
 
-/* .program-content h3{
-   font-size: 0.9rem;
-   float: left;
-   background-color: rgb(240, 240, 240);
-   display: inline;
-   border-radius: 4px;
-   color: rgb(45, 45, 45);
-   text-transform: capitalize;
-} */
 
-.program-item p{
+.program-item p,
+.blog-caption p{
     font-size: 0.8rem;
     text-align: justify;
     line-height: 1.5rem;
@@ -85,21 +93,36 @@ main #program ul{
     border-radius: 4px;
     clear: both;
     padding: 1rem;
-    
+    color: var(--text-color);
 
 }
-
-.download-btn{
-    margin-bottom: 13px;
-}
-
-.download-btn a button:hover{
-    background-color: var(--background-color-dark)
-}
-
 /** End of styling the coding/programming section **/
+
+
+
+/** Start of blog container styling **/
+
+.blog-container{
+    background-color: rgb(26, 26, 26);
+    color: rgb(220, 220, 220);
+    padding-bottom: 2rem;
+}
+
+.blog-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.blog-title-txt{
+    color: var(--text-color);
+    font-size: 0.8rem;
+}
+
+/** End of blog container styling **/
 
 footer{
     margin-top: 10rem;
 }
-
