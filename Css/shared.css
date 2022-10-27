@@ -39,12 +39,7 @@ body{
 
 /* start of index header and hero-content styling */
 
-/* header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-} */
+
 
 header{
     /* width: 100%; */
@@ -53,9 +48,14 @@ header{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    position: sticky;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+
     box-shadow: 0 0 8px -1px rgb(0 0 0 / 25%);
-    z-index: 999;
+    /* z-index: 999; */
     font-family: var(--header-font-family);
     font-size: var(--header-font-size);
     background-color: var(--header-background-color);
@@ -63,6 +63,13 @@ header{
     /* padding: 15px 68px; */
     padding: 0 5%;
 }
+
+/* .navbar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
 
 .nav-menu{
     display: flex;
@@ -91,7 +98,6 @@ header a:hover{
 
 
 #hero-image-container{
-    /* background-image: url(../Image/hero_image.jpg); */
     background-color: rgb(32, 32, 32);
     height: 500px;
     background-position: center;
