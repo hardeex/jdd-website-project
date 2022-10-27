@@ -54,7 +54,8 @@ html{
 .program-item,
 .blog-post-container,
 .edu-content,
-.architecture-container img{
+.architecture-container img,
+.architecture-video video{
     width: 100%;
     background-color: white;
     border-radius: 10px;
@@ -179,10 +180,24 @@ html{
 
 /** start of architecture section styling **/
 
-.architecture-container img{
+.architecture-container img,
+.architecture-video video{
     width: 100%;
     height: 250px;
     object-fit: cover;
+}
+
+.architecture-btn{
+    padding-top: 3rem;
+}
+
+.architecture-btn a button{
+    background-color: var(--background-color-light);
+    padding: 0.4rem 1rem;
+    margin-right: 3rem;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 6px;
 }
 
 

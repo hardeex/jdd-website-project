@@ -152,7 +152,8 @@ form button,
 
 form button:hover,
 .download-btn a button:hover,
-.blog-explore-btn a button:hover{
+.blog-explore-btn a button:hover,
+.architecture-btn a button:hover{
     background-color: var(--background-color-dark);
     color: rgba(230, 230, 230);
     font-weight: bold;
