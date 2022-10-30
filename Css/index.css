@@ -40,7 +40,9 @@ html{
 .program ul,
 .blog-container ul,
 .education-container ul,
-.architecture-container ul{
+.architecture-container ul,
+.telecom-container ul,
+footer{
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -106,7 +108,8 @@ html{
 /** Start of blog container styling **/
 
 .blog-container,
-.architecture-container{
+.architecture-container,
+footer{
     background-color: rgb(26, 26, 26);
     color: rgb(220, 220, 220);
     padding-bottom: 2rem;
@@ -201,7 +204,47 @@ html{
 }
 
 
-/** start of architecture section styling **/
-footer{
-    margin-top: 10rem;
+/** End of architecture section styling **/
+
+/** start of styling the telecom container **/
+
+.telecom-container ul .program-item{
+    /* height: 550px; */
 }
+
+.download-btn{
+    padding: 0;
+    margin: 0;
+}
+
+
+/** End of styling the telecom container **/
+
+
+/** start of footer styling */
+
+footer{
+    width: 100%;
+    margin-top: 2rem;
+    text-align: justify;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2rem;
+    color: rgb(250, 250, 250);
+}
+
+
+
+footer ul{
+    list-style-type: none;
+}
+
+footer a{
+    color: rgb(190, 190, 190);
+}
+
+footer a:hover{
+    color: var(--background-color-dark);
+}
+
+/** End of styling the footer */
