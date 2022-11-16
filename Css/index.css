@@ -41,8 +41,7 @@ html{
 .blog-container ul,
 .education-container ul,
 .architecture-container ul,
-.telecom-container ul,
-footer{
+.telecom-container ul{
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -155,14 +154,8 @@ footer{
 
 /** start of the education container **/
 
-
-/* .education-container h2{
-    text-transform: uppercase;
-    font-family: var(--header-font-family);
-} */
-
 .edu-content{
-    height: 250px;
+    height: 150px;
 }
 
 .edu-content a{
@@ -171,7 +164,7 @@ footer{
 
 .edu-content a p{
     text-transform: capitalize;
-    font-size: 3rem;
+    font-size: 2.2rem;
     padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -208,9 +201,7 @@ footer{
 
 /** start of styling the telecom container **/
 
-.telecom-container ul .program-item{
-    /* height: 550px; */
-}
+
 
 .download-btn{
     padding: 0;
@@ -224,7 +215,9 @@ footer{
 /** start of footer styling */
 
 footer{
-    width: 100%;
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2rem;
     text-align: justify;
     padding: 1rem;
@@ -233,6 +226,9 @@ footer{
     color: rgb(250, 250, 250);
 }
 
+/* footer #footer-section{
+    width: 100%;
+} */
 
 
 footer ul{

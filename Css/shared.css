@@ -42,34 +42,22 @@ body{
 
 
 header{
-    /* width: 100%; */
     font-family: var(--font-family);
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-
     position: fixed;
     width: 100%;
     top: 0;
     overflow: hidden;
-
     box-shadow: 0 0 8px -1px rgb(0 0 0 / 25%);
-    /* z-index: 999; */
     font-family: var(--header-font-family);
     font-size: var(--header-font-size);
     background-color: var(--header-background-color);
     height: var(--header-height);
-    /* padding: 15px 68px; */
     padding: 0 5%;
 }
-
-/* .navbar{
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-} */
 
 .nav-menu{
     display: flex;
